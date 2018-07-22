@@ -1,1 +1,21 @@
-= @html
+%table
+  %thead
+    %tr
+      %td Player
+      %td Matches
+      %td Win %
+      %td KDA
+      %td Kills
+      %td Deaths
+      %td Assists
+      %td LH
+      %td DN
+      %td GPM
+      %td XPM
+  - @teams.each do |team|
+    %tbody
+      %tr
+      - team.each do |player|
+        %tr
+          - player.each do |val|
+            %td= val

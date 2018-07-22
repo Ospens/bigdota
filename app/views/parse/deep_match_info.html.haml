@@ -1,0 +1,61 @@
+%table
+  %thead
+    %tr
+      %td match
+      %td won
+      %td duration
+      %td radiant_kills
+      %td dire_kills
+      - (1..5).each do |i|
+        %td= "hero_#{i}_radiant"
+        %td= "K_#{i}_radiant"
+        %td= "D_#{i}_radiant"
+        %td= "A_#{i}_radiant"
+        %td= "NET_#{i}_radiant"
+        %td= "LH_#{i}_radiant"
+        %td= "DN_#{i}_radiant"
+        %td= "GPM_#{i}_radiant"
+        %td= "XPM_#{i}_radiant"
+        %td= "DMG_#{i}_radiant"
+        %td= "HEAL_#{i}_radiant"
+        %td= "BLD_#{i}_radiant"
+      %td= "K_total_radiant"
+      %td= "D_total_radiant"
+      %td= "A_total_radiant"
+      %td= "NET_total_radiant"
+      %td= "LH_total_radiant"
+      %td= "DN_total_radiant"
+      %td= "GPM_total_radiant"
+      %td= "XPM_total_radiant"
+      %td= "DMG_total_radiant"
+      %td= "HEAL_total_radiant"
+      %td= "BLD_total_radiant"
+      - (1..5).each do |i|
+        %td= "hero_#{i}_dire"
+        %td= "K_#{i}_dire"
+        %td= "D_#{i}_dire"
+        %td= "A_#{i}_dire"
+        %td= "NET_#{i}_dire"
+        %td= "LH_#{i}_dire"
+        %td= "DN_#{i}_dire"
+        %td= "GPM_#{i}_dire"
+        %td= "XPM_#{i}_dire"
+        %td= "DMG_#{i}_dire"
+        %td= "HEAL_#{i}_dire"
+        %td= "BLD_#{i}_dire"
+      %td= "K_total_dire"
+      %td= "D_total_dire"
+      %td= "A_total_dire"
+      %td= "NET_total_dire"
+      %td= "LH_total_dire"
+      %td= "DN_total_dire"
+      %td= "GPM_total_dire"
+      %td= "XPM_total_dire"
+      %td= "DMG_total_dire"
+      %td= "HEAL_total_dire"
+      %td= "BLD_total__dire"
+  %tbody
+    - @all_info.each do |info|
+      %tr
+        - info.each do |val|
+          %td= val

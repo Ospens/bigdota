@@ -1,0 +1,14 @@
+%table
+  %thead
+    %tr
+      %td Match ID
+      %td region
+      %td radiant
+      %td won
+      %td lost
+      %td duration
+  %tbody
+    - @all_matches.each do |match|
+      %tr
+        - match.each do |val|
+          %td= val

@@ -1,0 +1,11 @@
+%table
+  %thead
+    %tr
+      %td hero
+      %td match
+      %td duration
+  %tbody
+    - @all_matches.each do |match|
+      %tr
+        - match.each do |val|
+          %td= val
