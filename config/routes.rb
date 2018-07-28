@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "matches" => "parse#matches"
   get "players_matches" => "parse#players_matches"
   get "deep_match_info" => "parse#deep_match_info"
+  resources :parse_varena
 end

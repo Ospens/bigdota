@@ -1,0 +1,22 @@
+%table
+  %thead
+    %tr
+      %td first_team
+      %td second_team
+      %td match
+      %td map_number
+      %td winner
+      %td kills
+      %td duration
+      %td first_team_radiant
+      %td first_team_fp
+      - (1..10).each do |i|
+        %td= "p#{i}_link"
+        %td= "p#{i}_duration"
+        %td= "p#{i}_KDA"
+        %td= "p#{i}_stat"
+  %tbody
+    - @data.each do |rows|
+      %tr
+        - rows.each do |row|
+          %td= row
